@@ -1,0 +1,122 @@
+main {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 20px;
+}
+
+.main-dark {
+  color: white;
+}
+
+.conted-word {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 50px;
+  position: relative;
+}
+
+h1 img {
+  position: absolute;
+  right: 0px;
+  top: 8px;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+h1 img:hover {
+  transform: scale(1.05);
+  filter: contrast(200%);
+}
+
+strong {
+  margin-top: 12px;
+  font-size: 25px;
+  color: #a445ed;
+}
+
+.conted-word h2 {
+  display: flex;
+  margin-top: 40px;
+  gap: 15px;
+  font-style: italic;
+}
+
+.conted-word h2 div {
+  width: 100%;
+  height: 1px;
+  background-color: #cccccc49;
+  align-self: center;
+}
+
+.meanings {
+  margin-top: 40px;
+}
+
+.meanings h3 {
+  color: rgb(139, 139, 139);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.meanings p {
+  display: flex;
+  width: 100%;
+  min-height: 20px;
+  gap: 10px;
+  padding-left: 40px;
+  margin-top: 20px;
+  opacity: 0.7;
+  position: relative;
+}
+
+.cir-2 {
+  font-size: 20px;
+  width: 5px;
+  height: 5px;
+  background-color: #a445ed;
+  opacity: 1;
+  position: absolute;
+  left: 20px;
+  top: 5px;
+  border-radius: 50%;
+}
+
+.syn {
+  color: rgb(139, 139, 139);
+  font-weight: 400;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.syn strong {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.c {
+  margin-top: 0px;
+}
+
+.example {
+  margin-top: 10px !important;
+  opacity: 0.5 !important;
+}
+
+.error {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.error p {
+  text-align: center;
+  opacity: 0.6;
+}
