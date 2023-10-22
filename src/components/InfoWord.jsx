@@ -22,7 +22,7 @@ function InfoWord({ datos }) {
       </h2> : null
     }
     <article className="meanings">
-      <h3>Meaning</h3>
+      <span className="syn">Meaning</span>
       {
         datos.meanings[0].definitions.map((e, i) => {
           return <p key={i}><div className='cir-2'></div> {e.definition}</p>
@@ -31,14 +31,14 @@ function InfoWord({ datos }) {
 
     </article>
 
-    <h3 className="syn">Synonyms <strong>{datos.meanings[0].synonyms}</strong></h3>
+    <span className="syn">Synonyms <strong>{datos.meanings[0].synonyms}</strong></span>
 
     <h2>
       {datos?.meanings[1]?.partOfSpeech}
       <div></div>
     </h2>
 
-    <h3 className="syn">Meaning</h3>
+    <span className="syn">Meaning</span>
 
     <article className="meanings c">
       {
