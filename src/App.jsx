@@ -49,12 +49,12 @@ function App() {
                 font={font}
                 themeDark={themeDark}
               />
-              <span
+              <div
                 onClick={handleTheme}
                 className={themeDark ? "btn-theme btn-dark" : "btn-theme"}>
-                <div
-                  className={themeDark ? "circle circle-dark" : "circle"}></div>
-              </span>
+                <span
+                  className={themeDark ? "circle circle-dark" : "circle"}></span>
+              </div>
               <Mood themeDark={themeDark} />
             </div>
           </nav>

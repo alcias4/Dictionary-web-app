@@ -32,12 +32,12 @@ export function Selector({ setFont, font, themeDark }) {
     >
       {
         n.map((n, i) => (
-          <button
+          <li
             className={themeDark ? "dark-btn" : null}
             style={{ fontFamily: font }}
             onClick={() => { setFont(n) }}
             key={i + 2000}>{n}
-          </button>
+          </li>
         ))
       }
     </menu>

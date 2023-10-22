@@ -57,11 +57,16 @@ function InfoWord({ datos }) {
 
 function ErrorFeching({ datos }) {
   const n = datos?.title ? "😕" : "Dictionary 😁"
-  return <div className="error">
-    <h1>{n}</h1>
-    <h3>{datos?.title}</h3>
-    <p>{datos?.message}.{datos?.resolution}</p>
-  </div>
+  return <>
+    {
+      n ? <div className="error">
+        <h1>{n}</h1>
+        <h3>{datos?.title}</h3>
+        <p>{datos?.message}.{datos?.resolution}</p>
+      </div> :
+        <h1>{n}</h1>
+    }
+  </>
 }
 
 
