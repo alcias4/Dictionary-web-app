@@ -32,7 +32,7 @@ function InfoWord({ datos }) {
     <h3 className="syn">Synonyms <strong>{datos.meanings[0].synonyms}</strong></h3>
 
     <h2>
-      {datos?.meanings[1]?.partOfSpeechl}
+      {datos?.meanings[1]?.partOfSpeech}
       <div></div>
     </h2>
 
