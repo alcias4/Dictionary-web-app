@@ -10,7 +10,7 @@ import './style/main.css'
 function App() {
   const [word, setWord] = useState()
   const { datos, getServiceWord, loangind } = useWord()
-  const [font, setFont] = useState("lora")
+  const [font, setFont] = useState("inconsolata")
   const [error, setError] = useState(false)
   const [themeDark, setDark] = useState(false)
   const handleSumit = (e) => {
@@ -81,7 +81,10 @@ function App() {
         <main
           className={themeDark ? "main-dark " : null}
           style={{ fontFamily: font }}>
-          {loangind ? <p>Esperando...</p> : <InfoWords datos={datos} />}
+          {loangind ?
+            <img className="loanding-icon" src="./images/Loading.svg" /> :
+            <InfoWords datos={datos} />
+          }
         </main>
       </div>
     </>

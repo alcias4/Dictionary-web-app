@@ -9,11 +9,29 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
 }
 
 .dark-page {
   background-color: #050505;
+  min-height: 100vh;
+}
+
+.loanding-icon {
+  align-self: center;
+  margin-top: 40px;
+  width: 100px;
+  animation: girar 1500ms ease-in-out infinite;
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (width > 1300px) {
