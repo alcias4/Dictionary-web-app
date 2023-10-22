@@ -15,10 +15,12 @@ function InfoWord({ datos }) {
     <strong>
       {datos.phonetic}
     </strong>
-    <h2>
-      {datos.meanings[0].partOfSpeech}
-      <div></div>
-    </h2>
+    {
+      datos.meanings[0].partOfSpeech ? <h2>
+        {datos.meanings[0].partOfSpeech}
+        <div></div>
+      </h2> : null
+    }
     <article className="meanings">
       <h3>Meaning</h3>
       {

@@ -13,6 +13,8 @@ function App() {
   const [font, setFont] = useState("inconsolata")
   const [error, setError] = useState(false)
   const [themeDark, setDark] = useState(false)
+
+
   const handleSumit = (e) => {
     e.preventDefault()
 
@@ -47,12 +49,12 @@ function App() {
                 font={font}
                 themeDark={themeDark}
               />
-              <button
+              <span
                 onClick={handleTheme}
                 className={themeDark ? "btn-theme btn-dark" : "btn-theme"}>
                 <div
                   className={themeDark ? "circle circle-dark" : "circle"}></div>
-              </button>
+              </span>
               <Mood themeDark={themeDark} />
             </div>
           </nav>
